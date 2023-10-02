@@ -40,7 +40,7 @@ const ImageUpload: React.FC<DropzoneProps> = ({ onChange, label, value, disabled
     <div {...getRootProps({className: 'w-full p-4 text-white text-center border-2 border-dotted rounded-md border-neutral-700 cursor-pointer'})}>
       <input {...getInputProps()} />
       {base64 ? (
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center">
           <Image
             src={base64}
             height="100"

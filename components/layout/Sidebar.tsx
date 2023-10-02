@@ -1,5 +1,5 @@
 import { signOut } from 'next-auth/react';
-import { BiLogOut, BiVideo } from 'react-icons/bi';
+import { BiLogOut, BiNews, BiVideo } from 'react-icons/bi';
 import { BsHouseFill, BsBellFill, BsMessenger } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
 
@@ -41,8 +41,15 @@ const Sidebar = () => {
     },
     {
       icon: BiVideo,
-      label: 'Video',
+      label: 'Watch together',
       href: `/video`,
+      auth: true,
+      
+    },
+    {
+      icon: BiNews,
+      label: 'News',
+      href: `/news`,
       auth: true,
       
     },
